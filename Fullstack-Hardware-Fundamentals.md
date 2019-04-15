@@ -19,6 +19,7 @@ Fullstack-Hardware-Fundamentals
 		- Floating gate transisters (Solid State Drives)
 	- Hard Drive is Storage - where we keep information, but not where we do things(comuptations) with it
 	- If CPU = brain ('metal'), memory is closer than storage
+		- can think of CPU as set of input/output switches
 	- analogy: storage : file cabinet :: memory : desk
 	- RAM is sweet spot between speed and space
 
@@ -36,12 +37,25 @@ Fullstack-Hardware-Fundamentals
 	- Sounds can be encoded
 
 3. Abstractions and Langauges (1:03)
-
-
+	- Assemblers take text and translate it to machine code
+	- Compilers (1952, Grace Hopper): translate from a high level (more abstract) language into machine code
+		- eg allows for looping
+		- Compilers generate the actual instructions to alter registers (in hardware)
+	- Languages and Memory Management
+		- Lower level languages (eg C) allow a programmer to specify how to alter and use memory
+		- Higher level languages (eg JS) don't require a programmer to specify how to use memory; they automatically reserve memory for you and release memory when it's no longer needed
 
 4. Abstract Data Types & Structures
-	1. Queues
-	2. Linked Lists
-	3. Hash Tables
-	4. Trees
+	- primitive datatypes are immutable (Pass by Value)
+		- when assigning a variable to a primitive, we pass it the value of that data
+		- when we assign a second var (y) to be equal to the value of a first var (x), the computer stores that integer value in two different places
+	- objects are mutable (Pass by Reference)
+		- unlike primitives, variables assigned to point to objects only point to the address of the object, not the data stored in it
+		- a second variable set equal to the first will create a new pointer to the same object; it will not allocate more memory to make a second object
+		- modifying the object refered to by the first var will also change the outputs when calling the second var, since both variables refer to the same mutable object
+	- eg: 
+		1. Queues
+		2. Linked Lists
+		3. Hash Tables
+		4. Trees
 5. Extras
