@@ -3,22 +3,33 @@ FS-Intro-to-Git
 
 1. Git Commands
 	
-	git init 				// Creates a repository
-	git clone <\path>		// First time pull to get a copy for your local workspace
-	git pull				// Fetches from and integrate with another repository or a local branch
-	git commit
-	git push				// Updatez remote refs along with associated objects
-	git remote				// ? what does this command do?
-	git config 				
-	git mv					// moves
-	git add
+	- git init 				// Creates a repository
+	- git clone <\path>		// First time pull to get a copy for your local workspace
+	- git pull				// Fetches from and merges to another repository or a local branch
+	- git commit
+	- git push				// Updatez remote refs along with associated objects
+	- git remote				// ? what does this command do?
+	- git config 				
+	- git mv				// moves
+	- git add
 			-a 				// adds everything, including in parent directories 
 			*				// adds everything in present working directory and below
-	`git reset <commit>` 
+	- `git reset <commit>` 
 			- hard 
 			--soft			// [ex: `git reset --soft head~1`]
-	git checkout			// allows you to switch between branches
-	git fetch 				// Download objects and refs from another repository
+	- git checkout			// allows you to switch between branches ; moves where the head points
+		- moving up
+			- ^	moves up one 
+			- ^^  moves up two
+			- `~<num>` moves up num branches	
+	- git checkout -b [newBranchName] //creates new branch and switches to it
+	- git fetch 			// Download objects and refs from another repository
+	- git Branch 			// List, create, move around rbances
+			-d 				// Deletes a local branch
+
+
+
+
 
 2. What is Git?
 	- A Distributed Version Control System (DVCS)
@@ -59,3 +70,4 @@ FS-Intro-to-Git
 Misc:
 	//Game of life - can you make it adjustable size?
 
+// git branch -f master HEAD~3 //
