@@ -3,28 +3,28 @@ FS-Intro-to-Git
 
 1. Git Commands
 	
-	- git init 				// Creates a repository
-	- git clone <\path>		// First time pull to get a copy for your local workspace
-	- git pull				// Fetches from and merges to another repository or a local branch
-	- git commit
-	- git push				// Updatez remote refs along with associated objects
-	- git remote				// ? what does this command do?
-	- git config 				
-	- git mv				// moves
-	- git add
+	- `git init` 				// Creates a repository
+	- `git clone <path>`		// First time pull to get a copy for your local workspace
+	- `git pull`				// Fetches from and merges to another repository or a local branch
+	- `git commit`
+	- `git push`				// Updatez remote refs along with associated objects
+	- `git remote`				// ? what does this command do?
+	- `git config` 				
+	- `git mv`				// moves
+	- `git add`
 			-a 				// adds everything, including in parent directories 
 			*				// adds everything in present working directory and below
 	- `git reset <commit>` 
 			- hard 
 			--soft			// [ex: `git reset --soft head~1`]
-	- git checkout			// allows you to switch between branches ; moves where the head points
+	- `git checkou`t			// allows you to switch between branches ; moves where the head points
 		- moving up
 			- ^	moves up one 
 			- ^^  moves up two
 			- `~<num>` moves up num branches	
-	- git checkout -b [newBranchName] //creates new branch and switches to it
-	- git fetch 			// Download objects and refs from another repository
-	- git Branch 			// List, create, move around rbances
+	- `git checkout -b [newBranchName]` //creates new branch and switches to it
+	- `git fetch` 			// Download objects and refs from another repository
+	- `git branch` 			// List, create, move around rbances
 			-d 				// Deletes a local branch
 
 
@@ -56,8 +56,8 @@ FS-Intro-to-Git
 		- area to prepare files for commits [?]
 
 6. Branching
-	- `pull requests` are part of github not explicitly part of git
-	- `merge conflicts` asks a human to resolve the conflict
+	- *pull requests* are part of github not explicitly part of git
+	- *merge conflicts* asks a human to resolve the conflict
 
 7. Directories
 	- Organizing good directories helps avoid merge conflicts
@@ -68,6 +68,6 @@ FS-Intro-to-Git
 	- forking - 'i want to work on my version of this project'
 
 Misc:
-	//Game of life - can you make it adjustable size?
+	- Game of life - can you make it adjustable size?
 
-// git branch -f master HEAD~3 //
+
