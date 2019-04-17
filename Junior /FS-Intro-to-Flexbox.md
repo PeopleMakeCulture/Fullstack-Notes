@@ -1,81 +1,82 @@
 FS-Intro-to-Flexbox
 
-1. What is flexbox?
-	- A layout module
-	- caniuse.com
+1.  What is flexbox?
 
-2. How to use Flexbox
+    - A layout module
+    - caniuse.com
 
-	1. Container (parent)
+2.  How to use Flexbox
 
-					1. Initialize in parent container
-					***
-						 `.container {
-							display: flex;
-						}`
-					***
-						- automatically displays container elements in a row (instead of defaulting to display elements vertically)
+    1.  Container (parent)
 
-					2. Flex Direction
-						1. Ways to order elements
-							- column
-							- column-reverse
-							- row
-							- row-reverse
-						2. Axes
-							- main-axis: horizontal axis for rows; vertical axis for columnns
-							- cross-axis: the perpendicular one
-					3. Flex Wrap
-						***
-						 `.container {
-							flex-wrap: wrap 
-						}`
-					***
-							- if elements extend past an edge of a browser window, wraps to next row
+            		1. Initialize in parent container
+            		***
+            			 `.container {
+            				display: flex;
+            			}`
+            		***
+            			- automatically displays container elements in a row (instead of defaulting to display elements vertically)
 
-					4. Flex Flow
-							***
-						 `.container {
-							flex-flow: row-wrap
-						}`
-					***
-						- takes in flex direction and flex wrap
+            		2. Flex Direction
+            			1. Ways to order elements
+            				- column
+            				- column-reverse
+            				- row
+            				- row-reverse
+            			2. Axes
+            				- main-axis: horizontal axis for rows; vertical axis for columnns
+            				- cross-axis: the perpendicular one
+            		3. Flex Wrap
+            			***
+            			 `.container {
+            				flex-wrap: wrap
+            			}`
+            		***
+            				- if elements extend past an edge of a browser window, wraps to next row
 
-					6. Centering
-						-justify-content: (centers on main axis, usually along a row)
-							- flex-start
-							- flex-end
-							- center
-							- space-around
-							- space-between
-							- space-evenly
-						- align-itmes: (centers along cross axis, usually vertically)
-							- flex-start
-							- flex-end
-							- center
-							- flex-center
-							- baseline
-							- stretch
+            		4. Flex Flow
+            				***
+            			 `.container {
+            				flex-flow: row-wrap
+            			}`
+            		***
+            			- takes in flex direction and flex wrap
 
-	2. Item (Child)
 
-				1. Adjust Order
-					- default order is 0
-					- order: (num) (changes order of an element)
+    				6. Centering
+    					-justify-content: (centers on main axis, usually along a row)
+    						- flex-start
+    						- flex-end
+    						- center
+    						- space-around
+    						- space-between
+    						- space-evenly
+    					- align-itmes: (centers along cross axis, usually vertically)
+    						- flex-start
+    						- flex-end
+    						- center
+    						- flex-center
+    						- baseline
+    						- stretch
 
-				5. Adjust Size	
-					- flex-grow: (num) 
-					- flex-shrink: (num)
-					- useful for responsive design
+    2. Item (Child)
 
+    			1. Adjust Order
+    				- default order is 0
+    				- order: (num) (changes order of an element)
+
+    			5. Adjust Size
+    				- flex-grow: (num)
+    				- flex-shrink: (num)
+    				- useful for responsive design
+    			3. Flex Basis
+    				- sets default size
+    				- syntax: (maybe height)(maybe width)(% of width (main axis))
 
 3. Responsive design dev tools
-	- start w/ inspector, but make sure you test on device also b/c it isn't always accurate
+    - start w/ inspector, but make sure you test on device also b/c it isn't always accurate
 
-
-
-
-
+Workshop - box first
 
 //
 DOM Checkpoint open
