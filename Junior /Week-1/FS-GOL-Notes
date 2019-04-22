@@ -1,0 +1,22 @@
+FS-GOL-Notes
+
+document.getElementbyId() returns a data type node
+
+divide up getNextState() and applyNextState() functions
+
+//talk to Nick about - how when pair partnering to steer your partner towards effective solution
+	- would have to listen effectively, understand what they're saying, and then either accept the idea if it's better, or convince them that while it's a good idea, your idea is better
+
+
+//code immmutably --functional programming --refactor the for loops w/ map
+
+if (cell.dataset.status === 'alive')
+
+//i should prolly use code throughs and reviews to test whether i understand someone else's coding logic well enough to evaluate their strategy -- this is super important in a work context
+
+`this.stepInterval`
+
+`this.applyState`
+
+- Dan's code uses 'this' to refer to the game of life *library* (ie the *lexical* (library) context)
+- this unfortunately means that for me, i'm going to have to do the stuff i care about in off hours before/after/off campus; focus on campus on people skills

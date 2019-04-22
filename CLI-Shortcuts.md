@@ -25,6 +25,10 @@ Foundations Week 1
         q : Quit (another "get out of trouble" command. Try q when CTRL + C doesn't work.)
         .. : Move up one directory in the filesystem
         ../../.. : Move up three directories in the filesystem
+        rm <file>: delete file
+        rm -r <directory>: delete directory
+        mv <file-old><file-new>: renames directory
+        mv <file><directory>: moves file to directory, possibly overwriting an existing file
 
 
     Terms
@@ -34,12 +38,3 @@ Foundations Week 1
         Directory : A "folder"
         Standard Output : The output in the Command Line after a command (often displayed as stdout)
         Standard Input : The input in the Command Line before a command (often displayed as stdin)
-
-1.1 Sublime Text Shortcuts (https://www.tutorialspoint.com/sublime_text)
-Cmd+Shift+P : Command Palette
-Cmd + D : Count number of occurrences
-Cmd+Shift+L : Go to end to comment
-
-2. TDD Workflow
-    1. Write tests
-    2. Write code that passes tests
