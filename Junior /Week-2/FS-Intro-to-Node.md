@@ -36,8 +36,8 @@ FS Intro to Node
 	- Callstack has to be empty before async functions run
 
 5. FS module
-	- filestrewam module
-	- reading/writing functions to a string
+	- Stands for filestrewam module
+	- A global module in Node nomfor reading/writing functions to a string
 	- readFile is an example of an async function
 			``` const {readFile} = fs; //this is asynchronous because we don't know how long it will take to read a file, it could be from a far away server
 			let prediction;
