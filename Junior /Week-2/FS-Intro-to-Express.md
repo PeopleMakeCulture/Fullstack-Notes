@@ -49,6 +49,7 @@ app.get("/:id", (req, res, next) => {
 	- Can be thought of as a *route* (thus, routers)
 
 8. How are requests and responses formatted?
+	- Both are long strings?
 	- *Requests* have: 
 	```
 	Verb, URI (route), headers, body
@@ -61,6 +62,11 @@ app.get("/:id", (req, res, next) => {
 9. TCP
 	- Transmission Control Protocol
 	- Lower-level than HTTP; HTTP uses TCP
+
+10. REST again
+	- architecture for designing backend urls
+		- paths are nouns
+		- http methods are verbs
 
 Misc
 - Dan says Lyft just created a special hiring path for boot camp grads

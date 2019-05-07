@@ -22,11 +22,9 @@ FS Intro to Node
 	- like a "server" at a restaurant--you tell the server what you want, and the server either gives it to you or gives you an error message
 
 3. Program vs. Process
-	- program is code, like a recipe
-	- process is running the code, the cake itself
+	- program is code, like a recipe; process is running the code, the cake itself
 	- program is data; process is excecution
-
-	Is a process the same as a thread?
+	Q: Is a process the same as a thread?
 
 4. Asynchronous Coding
 	- handle tasks concurrently
@@ -38,7 +36,7 @@ FS Intro to Node
 5. FS module
 	- Stands for filestrewam module
 	- A global module in Node nomfor reading/writing functions to a string
-	- readFile is an example of an async function
+	- readFile is an example of an async function that returns a promise
 			``` const {readFile} = fs; //this is asynchronous because we don't know how long it will take to read a file, it could be from a far away server
 			let prediction;
 			readFile('.characters.tst', 'utf8', (err, data) => {
@@ -62,6 +60,46 @@ FS Intro to Node
 		2. Quese
 			- first in, first out (FIFO)
 	- Executes functions in a non-blocking manner
+
+7. Promises
+	- Used to simplify asych functions
+	- Returns an object representing [the eventual result of] a future event, instead of representing an action to take place in the future
+	- Has 
+		- A value
+			`value = undefined/returnValue` 
+		- And a status
+			`status = pending/fulfilled`
+	- `await` keyword
+			- returns the return value, not the promise object
+			- use `await` with `async function`
+			- eg ```
+				async getFile() => {
+					const num = await readFile('myFile.txt')
+				}
+				getFile();
+			```
+			- readFile is an example of an async function that returns a promise
+	- `Promise.resolve` 
+		- ensures that the value you give it is wrapped in a promise
+		- if it's a new promise, it immediately finishes with your value as the result
+		- if it already exists, it returns the promise
+	-`.then()` method
+		- callback to the promise 
+		- returns another promise, which resolves to the value that the handler function returns, etc.
+	- The *Promise constructor*
+		``` return new Promise(resolve => {
+			do something
+		})```
+
+
+```
+promise.then((result) => {
+  console.log(result); // "Stuff worked!"
+}, function(err) {
+  console.log(err); // Error: "It broke"
+});
+```
+then(successCaseFunction(),failCaseFunction())
 
 The `require` function
 	- tells the machine in needs to import something (a module? a library?)
@@ -97,16 +135,6 @@ V8 Engine
 Sierra
 	- Operating system for Node
 
-Promises
-```
-promise.then(function(result) {
-  console.log(result); // "Stuff worked!"
-}, function(err) {
-  console.log(err); // Error: "It broke"
-});
-```
-then(successCaseFunction(),failCaseFunction())
-
 
 Sample Code:
 ```
@@ -117,8 +145,3 @@ module.exporr = {
 const myModule = require(`(.myModule)
 
 ```
-
-Misc
-	- it seems like Node is kinda like the Android - lots of open source packages, gets kinda messy, but has a lot of stuff to borrow from
-	- Get folders sidebar on Sublime
-	- What is an App? Is it the same as a program/process?
