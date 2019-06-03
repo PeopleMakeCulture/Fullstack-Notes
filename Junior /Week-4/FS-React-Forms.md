@@ -17,8 +17,8 @@ constructor(){
 	this.handleChange = this.handleChange.bind(this)
 }
 
-
 handleChange(event){
+	event.preventDefault()
 	this.setState({
 		username:event.target.value
 		})
@@ -31,7 +31,7 @@ handleSubmit(event){
 
 render(){
 	<form onSubmit={this.handleSubmit}>
-		<input type='text' name='username' onChange={this.handleChange />
+		<input type='text' name='username' onChange={this.handleChange} />
 			<button type='submit'>SUBMIT</button>
 	</form>
 }
@@ -39,14 +39,4 @@ render(){
 
 _Make sure to name your inputs_ otherwise you will not be able to access its value with event.target.<Name of Field>.value
 
-## Controlled vs. Uncontrolled Components
 
-    - Controlled compoent: Form data controlled by a React component
-    - Uncontrolled component: data is controlled by the DOM itself (less useful)
-    Uncontrolled:
-    	- doesn't interact w/ state using value={this.state.keyname}
-    	- changes to the form update the state, but changes to state doesn't change the form
-
-## Where does the form state belong?
-
-Misc: - Redux will make state completely seperate from the components

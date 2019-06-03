@@ -1,7 +1,14 @@
 FS-Intro-to-Express
 
+(alt: python simple server?)
+
 1. What is Express?
 
+    - A Node.js framework (easier than writing node code to set up a server, though node can also do that (eg it has a Server obj too))
+    - Good for:
+        - hosting files
+        - setting up routes
+        - minimalist, but still easier than straight up Node
     - A web application framework for Node.js
     - A third-party library for Node.js
     - Used to create APIs (Application Programming Interface)
@@ -12,9 +19,9 @@ FS-Intro-to-Express
     - creates an application instance
     - Really good for "Restful APIs"
 
-2. What is npm init?
+2. What is app?
 
-    - It creates a new app(?)
+    - Dude...it's a function! More specifically, it's a function passed to Node's HTTP servers as a calback
 
 3. What is app.use good for?
     - verb agnostic actions - doesn't care if it's app.get or app.send whatever
@@ -22,9 +29,9 @@ FS-Intro-to-Express
 
 ```
 app.get("/:id", (req, res, next) => {
-	const id = Number(req.params.id)
-	const person = db.find(e => e.id ===id)
-	rec.send(`${person.name} is great at ${person.hobby})
+    const id = Number(req.params.id)
+    const person = db.find(e => e.id ===id)
+    rec.send(`${person.name} is great at ${person.hobby})
 })
 ```
 
@@ -38,20 +45,23 @@ app.get("/:id", (req, res, next) => {
     - handles responding requests
     - uses the synat with (req, res, next)
 
-6. Other stuff to check out:
+6. What is `express.static()`?
+   \*\*NOT SURE
+
+7. Other stuff to check out:
 
     - express.static (send an image or style)
     - Ex:
       `const staticMiddleware = express.static(path.join(__dirname, 'public')).app.use(staticMiddleware)`
 
-7. What is a URI?
+8. What is a URI?
 
     - Universal Resource Identifier
     - Can give a name, a location, or both
     - URLS are a subset of URIs (Universal Resource Locator)
     - Can be thought of as a _route_ (thus, routers)
 
-8. How are requests and responses formatted?
+9. How are requests and responses formatted?
 
     - Both are long strings?
     - _Requests_ have:
@@ -66,12 +76,12 @@ app.get("/:id", (req, res, next) => {
     Headers, payload, status
     ```
 
-9. TCP
+10. TCP
 
     - Transmission Control Protocol
     - Lower-level than HTTP; HTTP uses TCP
 
-10. REST again
+11. REST again
     - architecture for designing backend urls - paths are nouns - http methods are verbs
 
 # New Notes

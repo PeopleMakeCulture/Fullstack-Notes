@@ -9,13 +9,11 @@ FS-React-Redux
     </Provider>
 ```
 
-2. Connect
-   import from r-r library
-   maps redux store's state and dispatch to react props
-
-
-    //  maps
-    // replaces store.getState()?
+2. connect()
+    - import from r-r library
+    - maps redux store's state and dispatch to react props
+    - mapStateToProps replaces store.getState() and passes state as props
+    - mapDipatch to props replaces store.subscribe(listener) and maps Redux actions to functions that React can pass with props
 
 ```
     function mapStateToProps(state){
@@ -23,13 +21,10 @@ FS-React-Redux
     }
 ```
 
-    // this one maps Redux actions to functions that React can pass with props
-    // replaces store.subscribe(listener)?
-
 ```
     function mapDispatchToProps(dispatch){
         return{
-            //actions
+            //action
         }
     }
 ```
