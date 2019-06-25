@@ -1,4 +1,4 @@
-Foundations Week 1
+docs: https://ss64.com/bash/
 
 1.  CLI
 
