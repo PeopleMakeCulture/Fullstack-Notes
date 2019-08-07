@@ -1,8 +1,11 @@
 FS-Intro-HTML-CSS
 
 Lecture (Brian)
+1. HTML
+	- static files
+	- tags/classes/ids
 
-1. CSS 
+2. CSS 
 	- avoid specifying style in HTML file
 	- designed c.1994 to address the issue that neither author nor reader has sole control over page layout
 	- whole industries (UI/UX designers) just do CSS

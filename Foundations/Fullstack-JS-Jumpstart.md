@@ -16,7 +16,7 @@ Fullstack JS Basics
 
 	2. Why JS?
 			- Used across stack:
-				* client side (angular.js), 
+				* client side (angular.js, React/Redux, meteor?), 
 				* server side (node.js vs Ruby/Python), and 
 				* database (mongoDB vs. SQL) 
 
