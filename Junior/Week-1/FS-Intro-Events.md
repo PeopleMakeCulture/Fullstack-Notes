@@ -18,12 +18,10 @@ Documentation: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addE
     ```
 
 3.  Event Bubbling
-
     -   By default an event in a child triggers events in all parent levels
     -   `event.stopPropegation()` prevents this behavior
 
 4.  Delegation
-
     -   Ex: parent is list; add event listener that will remove any list item under the parent
 
     `let list = document.getElementbyId("parent-list") list.addEventListener("click", function(event){ let target = event.target; this.removeChild(target); //this refers to list, ie the parent-list })` - also removes sub-children

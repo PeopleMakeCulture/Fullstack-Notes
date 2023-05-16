@@ -111,7 +111,6 @@ app.get("/:id", (req, res, next) => {
       3.2 Res Object: https://expressjs.com/en/4x/api.html#res - Represents the HTTP response that an Express app sends when it gets an HTTP request
 
 Misc
-
 -   Dan says Lyft just created a special hiring path for boot camp grads
 -   app.js is a server?
 -   How do I get my terminal to say how long a process took to run (like guy from lunch yesterday)

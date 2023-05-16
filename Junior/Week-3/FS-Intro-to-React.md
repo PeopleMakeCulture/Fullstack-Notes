@@ -3,7 +3,6 @@ FS-Intro-to-React
 # Pre-Reading
 
 0. Requirements (What do we import?)
-
 ```
     import React from "react";
     import ReactDOM from "react-dom";
@@ -40,7 +39,6 @@ Why are they separate libraries? - the DOM isn't the only environment where we c
     ```React.createElement("h1", null, "Hi!")
 
     ```
-
     - In JSX, use a single pair of curly braces `{}` to evaluate a JavaScript expression.
 
 3. State and Props
@@ -127,24 +125,20 @@ HTML
 ReactDOM.render(compoenent, dom_address)
 Render! - method on class React.Component, which is the parent of all React class components - Render() returns JSX describing our view)
 
-##Component Life Cycle
-
+## Component Life Cycle
 -   important so we can freeze and do stuff between one life cycle stage and another
 -   Usually, an async function
 -   Like hooks in Sequelize
 -   ReactDOM.render() => Initial Render => mounted component => componentDidMount
 
-##The Virtual DOM
-
+## The Virtual DOM
 -   React makes websites more performant
 -   Compares the JSX output with a virtual DOM stored in memory
 -   Only changes what actually needs to be changed
 
-##Mounting
-
+## Mounting
 -   Component JSX is turned into real live DOM nodes
 
-##Component Did Mount
-
+## Component Did Mount
 -   only fires on initial rendering, not on state manipulation
 -   good place for AJAX fetch requests or event listeners

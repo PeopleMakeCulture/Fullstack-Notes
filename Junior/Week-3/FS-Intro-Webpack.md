@@ -1,8 +1,8 @@
-1. EF6 Import Export Syntax
+1. EF6 Import/Export Syntax
 	- `export default module` (instead of `module.exports(module)`)
 	- `import` module `from` path (instead of `const module = require(path)`)
 
-2. Why use Import/Expore?
+2. Why use Import/Export?
 	- More flexible
 
 3. AJAX
@@ -15,11 +15,12 @@
 	- is asynchronous
 	- can use `.then()` promise chaininggit 
 	- works over http
+
 4. What is fetch?
 	- lets us request from the browser (front-end) stuff from the back-end(server)
 	- allows us to get things w/o refreshing
 	- Cannot 'fetch' directly from database, b/c it 'talks http' (uses http protocall)  which uses pg database
-	- When we use express, we need to specify a Data Serialization format (text, json), even if express/middleware is already giving us a stream formatted in that format (JSON)
+	- When we use Express, we need to specify a Data Serialization format (text, json), even if express/middleware is already giving us a stream formatted in that format (JSON)
 
 Misc.
 	//ask nick! Why is nytimes not a SPA? Is every page treated like its own app?

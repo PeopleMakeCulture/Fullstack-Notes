@@ -7,4 +7,4 @@ Career Talk
 
 If you don't know something
 
--   I haven't encountered that beford--could you tell me about it?
+-   I haven't encountered that before--could you tell me about it?

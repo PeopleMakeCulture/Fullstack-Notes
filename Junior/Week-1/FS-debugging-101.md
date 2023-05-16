@@ -19,10 +19,8 @@ assume debugging is 2x difficulty of debugging
 
 2. Detect
 	read the stack trace
-
 	browser console open
 	server console open
-
 
 3. Diagnose
 	console
@@ -39,13 +37,7 @@ assume debugging is 2x difficulty of debugging
 
 4. Fix
 
-
-
-
 Workshop
-
 - JSON (JavaScript Object Notation)
 	- stricter syntax than JS
 	- keys and strings must be enclosed in double quotes
-
-

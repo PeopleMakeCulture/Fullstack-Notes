@@ -49,7 +49,6 @@ Lecture - Dan
 # Code
 
 New Store:
-
 ```
 import { createStore } from 'redux'
 

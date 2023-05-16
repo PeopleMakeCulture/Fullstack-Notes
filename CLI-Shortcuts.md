@@ -32,8 +32,6 @@ docs: https://ss64.com/bash/
 
 
     Terms
-
-
         File Path : A printout of the absolute location of a file on the filesystem.
         Directory : A "folder"
         Standard Output : The output in the Command Line after a command (often displayed as stdout)

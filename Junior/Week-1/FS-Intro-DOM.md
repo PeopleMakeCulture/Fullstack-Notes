@@ -11,11 +11,9 @@ What is a Node? - JS Objects, with attributes that are JS properties and methods
 2. How the DOM gets built
 
 3. DOM is a Tree!
-
     - Why? B/c trees are great for searching and we want to search the DOM
 
 4. Methods for Searching the DOM:
-
     1. Using an element ID
         - document.getElementByID("name")//don't make multiple elements w/ same ID; this one is fast, it only finds the first occurance of the thing
         - document.getElement**s**ByClassName("name") (findes every node with a certain Class attribute)
@@ -29,17 +27,13 @@ What is a Node? - JS Objects, with attributes that are JS properties and methods
         - Can also call `for each` in JS6
 
 5. Traversing the DOM
-
     - Once I've found a node I can call the following methods to traverse the DOM: - .nextSibling - .previousSibling - .firstChild - .lastChild - .parentNode
 
 6. Manipulating the DOM
-
     1. Changing style
-
         - element.style.[key = "value"];
 
     2. Changing CSS Classes
-
         - className attribute is a string of all of a node's classes
         - classList allows us to movidy the className
           -classList.toggle("class")

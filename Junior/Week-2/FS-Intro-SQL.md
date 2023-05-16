@@ -116,7 +116,6 @@ SELECT sub.*
 		- `sequence`: a way for postgres to keep track of sequences of numbers so that it can auto-increment things like ids
 
 
-
 Misc
 - Review solutions code/videos for daily workshops after class
 - Still so confused about `done`!

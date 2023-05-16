@@ -28,9 +28,6 @@ FS-Intro-to-Git
 			-d 				// Deletes a local branch
 
 
-
-
-
 2. What is Git?
 	- A Distributed Version Control System (DVCS)
 	- A *language* for version control that provides a set of tools for project management and collaboration
